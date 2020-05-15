@@ -18,7 +18,7 @@ const updateBoard = async (data) => {
 }
 
 const bootstrap = async () => {
-  const { data } = await axios.get('http://localhost:3000/getBoard');
+  const { data } = await axios.get('http://localhost:4555/getBoard');
   addEventListeners();
   updateBoard(data);
 }
@@ -26,7 +26,7 @@ const bootstrap = async () => {
 const onCellClick = async (e) => {
   const cell = allCells[e.target.id[1]];
   if (cell.innerText == '') {
-    const { data } = await axios.post('http://localhost:3000/move', {
+    const { data } = await axios.post('http://localhost:4555/move', {
       value: e.target.id[1], 
     });
   updateBoard(data);

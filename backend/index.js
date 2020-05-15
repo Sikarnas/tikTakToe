@@ -4,7 +4,7 @@ const tikTakToe = require('./tikTakToe');
 
 const app = express();
 app.use(cors(), express.json());
-app.listen(3000, () => console.log('Http server is running on port 3000'));
+app.listen(4555, () => console.log('Http server is running on port 3000'));
 
 app.get('/getBoard', (req, res) => {
   res.json(tikTakToe.getBoard());
