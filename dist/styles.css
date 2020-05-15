@@ -1,0 +1,40 @@
+.board {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 100px;
+}
+
+.cell:hover {
+  background-color: bisque;
+}
+
+#c0, #c1, #c2, #c3, #c4, #c5 {
+  border-bottom: 5px solid black;
+}
+
+#c2, #c5, #c8, #c1, #c4, #c7 {
+  border-left: 5px solid black;
+}
+
+#turn {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#log {
+  text-align: center;
+  font-family: sans-serif;
+}
