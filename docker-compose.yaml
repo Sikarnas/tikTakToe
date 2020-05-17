@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "4554:4554"
+  backend:
+    build: ./backend
+    ports:
+      - "4555:4555"
+
